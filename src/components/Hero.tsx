@@ -1,3 +1,5 @@
+import profileImg from '../assets/images/IMG_1101.jpg';
+
 export default function Hero() {
   return (
     <section
@@ -10,7 +12,7 @@ export default function Hero() {
         <div className="flex justify-center -mt-12 md:-mt-0">
           <div className="w-72 h-72 md:w-[360px] md:h-[360px] rounded-full overflow-hidden shadow-2xl border-0 border-white bg-white">
             <img
-              src="images/IMG_1101.jpg"
+              src={profileImg}
               alt="Thejeswari Portrait"
               className="w-full h-full object-cover object-top"
             />

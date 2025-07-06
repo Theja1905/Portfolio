@@ -1,9 +1,12 @@
+import gymSyncImg from '../assets/images/gym-sync.png';
+import portfolioImg from '../assets/images/portfolio.png';
+
 const projects = [
   {
     title: "GymSync",
     description:
       "An innovative fitness application currently in development. Features include workout tracking, progress monitoring, and social fitness community integration.",
-    image: "/images/gym-sync.png",
+    image: gymSyncImg, // ✅ Imported image
     technologies: ["React Native", "Firebase", "Firestore", "Expo Go"],
     liveUrl: "#",
     codeUrl: "https://github.com/Theja1905/GymSync",
@@ -12,7 +15,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "This personal portfolio website showcasing my skills, projects, and experience. Built with React and Tailwind CSS for a sleek and responsive design.",
-    image: "/images/portfolio.png",
+    image: portfolioImg, // ✅ Imported image
     technologies: ["React", "Tailwind CSS", "JavaScript"],
     liveUrl: "#",
     codeUrl: "#",
