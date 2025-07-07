@@ -63,7 +63,7 @@ export default function Navigation() {
 
         {/* Mobile Nav - GLASSY */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white/30 backdrop-blur-xl border border-white/20 rounded-xl shadow-lg py-4 px-4 mt-2 space-y-2">
+          <div className="md:hidden bg-blue-100/60 backdrop-blur-xl border border-white/20 rounded-xl shadow-lg py-4 px-4 mt-2 space-y-2">
             {navItems.map((item) => (
               <a
                 key={item}
