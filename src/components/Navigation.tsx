@@ -28,7 +28,7 @@ export default function Navigation() {
   const navItems = ["Home", "Experience", "Projects", "Education", "Skills", "Contact"];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-blue-100/70 backdrop-blur-md shadow-md border-b border-blue-300">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/10 backdrop-blur-xl shadow-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 sm:px-10">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -61,9 +61,9 @@ export default function Navigation() {
           </button>
         </div>
 
-        {/* Mobile Nav - GLASSY */}
+        {/* Mobile Nav - Glassy Look */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-blue-100/60 backdrop-blur-xl border border-white/20 rounded-xl shadow-lg py-4 px-4 mt-2 space-y-2">
+          <div className="md:hidden bg-white/10 backdrop-blur-xl border border-white/10 rounded-xl shadow-lg py-4 px-4 mt-2 space-y-2">
             {navItems.map((item) => (
               <a
                 key={item}
