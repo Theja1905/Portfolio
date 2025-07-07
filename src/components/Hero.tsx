@@ -9,15 +9,16 @@ export default function Hero() {
       {/* Layout Container */}
       <div className="flex flex-col md:flex-row items-center gap-30 w-full max-w-7xl">
         {/* Profile Image */}
-        <div className="flex justify-center -mt-12 md:-mt-0">
-          <div className="w-72 h-72 md:w-[360px] md:h-[360px] rounded-full overflow-hidden shadow-2xl border-0 border-white bg-white">
-            <img
-              src={profileImg}
-              alt="Thejeswari Portrait"
-              className="w-full h-full object-cover object-top"
-            />
-          </div>
-        </div>
+            <div className="flex justify-center mt-12 md:mt-0">
+            <div className="w-72 h-72 md:w-[360px] md:h-[360px] rounded-full overflow-hidden shadow-2xl border-0 border-white bg-white">
+                <img
+                src={profileImg}
+                alt="Thejeswari Portrait"
+                className="w-full h-full object-cover object-top"
+                />
+            </div>
+            </div>
+
 
         {/* Text + Avatar */}
         <div className="text-center md:text-left relative">
