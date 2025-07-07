@@ -42,7 +42,7 @@ export default function Projects() {
               key={index}
               className="bg-blue-50 rounded-2xl shadow-lg overflow-hidden card-hover fade-in w-full sm:w-[350px] lg:w-[400px]"
             >
-              <div className="w-full h-70 bg-blue-50 flex items-center justify-center">
+              <div className="w-full h-70 flex items-center justify-center">
                 <img
                   src={project.image}
                   alt={project.title}

@@ -15,7 +15,7 @@ export default function Education() {
         {/* Education Cards */}
         <div className="flex flex-col gap-8 items-center">
           {/* NUS */}
-          <div className="bg-blue-50 border border-slate-200/40 shadow-md rounded-2xl p-6 w-full sm:w-[500px] lg:w-[900px] fade-in">
+          <div className="bg-blue-100 border border-slate-200/40 shadow-md rounded-2xl p-6 w-full sm:w-[500px] lg:w-[900px] fade-in">
             <h3 className="text-xl font-semibold text-slate-800">
               National University of Singapore
             </h3>
@@ -36,7 +36,7 @@ export default function Education() {
           </div>
 
           {/* VJC */}
-          <div className="bg-blue-50 border border-slate-200/40 shadow-md rounded-2xl p-6 w-full sm:w-[500px] lg:w-[900px] fade-in">
+          <div className="bg-blue-100 border border-slate-200/40 shadow-md rounded-2xl p-6 w-full sm:w-[500px] lg:w-[900px] fade-in">
             <h3 className="text-xl font-semibold text-slate-800">
               Victoria Junior College
             </h3>
