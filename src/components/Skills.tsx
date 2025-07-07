@@ -1,17 +1,20 @@
 export default function Skills() {
-  const skills = [
-    "Java",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "React Native",
-    "Firebase",
-    "Tailwind CSS",
-    "HTML & CSS",
-    "Git & GitHub",
-    "SQL",
-    "Figma",
-  ];
+  const categories = {
+    "Languages & Frameworks": [
+      "Java",
+      "R",
+      "React.js",
+      "React Native",
+      "JavaScript",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML & CSS",
+    ],
+    "Backend & Cloud": ["Firebase", "Firestore",],
+    "Version Control & Collaboration": ["Git & GitHub"],
+    "Data Tools & Analytics": ["Data Visulisation", "R Markdown", "dplyr", "Sheets / Excel"],
+    Others: ["Expo Go", "Canva", "VS Code", "Vite", "Netlify", "Figma", "Spline"],
+  };
 
   return (
     <section id="skills" className="py-12">
@@ -19,17 +22,25 @@ export default function Skills() {
         <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-slate-800">
           Skills & Technologies
         </h2>
-        <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-10">
-          A snapshot of the tools and technologies I've used in projects and coursework.
+        <p className="text-lg text-slate-600 max-w-4xl mx-auto mb-6">
+          A snapshot of the tools and technologies I've explored or used in projects and coursework.
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          {skills.map((skill, index) => (
-            <span
-              key={index}
-              className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium shadow-md"
-            >
-              {skill}
-            </span>
+
+        <div className="flex flex-col gap-6 items-start sm:items-center">
+          {Object.entries(categories).map(([category, skills], idx) => (
+            <div key={idx} className="w-full max-w-4xl text-left">
+              <h3 className="text-lg font-semibold text-slate-700 mb-2">{category}:</h3>
+              <div className="flex flex-wrap gap-3">
+                {skills.map((skill, i) => (
+                  <span
+                    key={i}
+                    className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium shadow-md"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>

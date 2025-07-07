@@ -7,7 +7,7 @@ const projects = [
     description:
       "An innovative fitness application currently in development. Features include workout tracking, progress monitoring, and social fitness community integration.",
     image: gymSyncImg, // ✅ Imported image
-    technologies: ["React Native", "Firebase", "Firestore", "Expo Go"],
+    technologies: ["React Native", "React.js", "Firebase", "Firestore", "Expo Go"],
     liveUrl: "#",
     codeUrl: "https://github.com/Theja1905/GymSync",
   },
@@ -16,9 +16,9 @@ const projects = [
     description:
       "This personal portfolio website showcasing my skills, projects, and experience. Built with React and Tailwind CSS for a sleek and responsive design.",
     image: portfolioImg, // ✅ Imported image
-    technologies: ["React", "Tailwind CSS", "JavaScript"],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "TypeScript", "Git", "Netlify"],
     liveUrl: "#",
-    codeUrl: "#",
+    codeUrl: "https://github.com/Theja1905/Portfolio",
   },
 ];
 

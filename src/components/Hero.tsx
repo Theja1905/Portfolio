@@ -34,7 +34,7 @@ export default function Hero() {
             </span>
             <span
               className="inline-block align-top overflow-visible"
-              style={{ width: 80, height: 80, position: 'relative' }}
+              style={{ width: 80, height: 80, position: 'relative', willChange: 'transform' }}
             >
               <iframe
                 src="https://my.spline.design/3dvoxelavatar-VToZTETgTtK72klpe2NetVF1/"
@@ -50,6 +50,7 @@ export default function Hero() {
                   position: 'absolute',
                   top: -70,
                   left: 20,
+                  willChange: 'transform',
                 }}
               ></iframe>
             </span>
