@@ -32,9 +32,15 @@ export default function Hero() {
             >
               Thejeswari
             </span>
+            {/* Avatar shown only on sm and above */}
             <span
-              className="inline-block align-top overflow-visible"
-              style={{ width: 80, height: 80, position: 'relative', willChange: 'transform' }}
+              className="hidden sm:inline-block align-top overflow-visible"
+              style={{
+                width: 80,
+                height: 80,
+                position: 'relative',
+                willChange: 'transform',
+              }}
             >
               <iframe
                 src="https://my.spline.design/3dvoxelavatar-VToZTETgTtK72klpe2NetVF1/"
@@ -58,8 +64,9 @@ export default function Hero() {
 
           <p className="text-xl sm:text-xl text-slate-700 mb-10 max-w-3xl leading-relaxed mt-6">
             I'm a Year 2 Information Systems student at NUS School of Computing.
-             I'm passionate about using technology to drive practical, user-focused solutions, creating digital experiences that are impactful. 
-             I'm always eager to explore new technologies, build impactful projects, and collaborate.
+            I'm passionate about using technology to drive practical, user-focused solutions,
+            creating digital experiences that are impactful.
+            I'm always eager to explore new technologies, build impactful projects, and collaborate.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
