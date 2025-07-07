@@ -40,7 +40,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-blue-50 rounded-2xl shadow-lg overflow-hidden card-hover fade-in w-full sm:w-[350px] lg:w-[400px]"
+              className="bg-blue-100 rounded-2xl shadow-lg overflow-hidden card-hover fade-in w-full sm:w-[350px] lg:w-[400px]"
             >
               <div className="w-full h-70 flex items-center justify-center">
                 <img
@@ -58,7 +58,7 @@ export default function Projects() {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="bg-blue-100 text-slate-700 px-3 py-1 rounded-full text-xs"
+                      className="bg-indigo-200 text-slate-700 px-3 py-1 rounded-full text-xs"
                     >
                       {tech}
                     </span>
