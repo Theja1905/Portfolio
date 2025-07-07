@@ -40,7 +40,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-orange-50 rounded-2xl shadow-lg overflow-hidden card-hover fade-in w-full sm:w-[350px] lg:w-[400px]"
+              className="bg-red-50 rounded-2xl shadow-lg overflow-hidden card-hover fade-in w-full sm:w-[350px] lg:w-[400px]"
             >
               <div className="w-full h-70 flex items-center justify-center">
                 <img
