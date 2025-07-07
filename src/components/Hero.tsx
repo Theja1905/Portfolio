@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen pt-10 px-6 md:px-12 lg:px-20 flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen pt-10 pb-20 md:pb-10 px-6 md:px-12 lg:px-20 flex items-center justify-center overflow-hidden"
     >
       {/* Layout Container */}
       <div className="flex flex-col md:flex-row items-center gap-10 md:gap-30 w-full max-w-7xl">
@@ -27,7 +27,7 @@ export default function Hero() {
             </span>
             <br />
             <span
-              className="name-text text-6xl sm:text-7xl lg:text-8xl font-extrabold animated-gradient-text pl-8 inline-block align-top cursor-default"
+              className="name-text text-6xl sm:text-7xl lg:text-8xl font-extrabold animated-gradient-text pl-0 sm:pl-8 inline-block align-top cursor-default"
               style={{ lineHeight: 1 }}
             >
               Thejeswari
