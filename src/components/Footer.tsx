@@ -9,14 +9,6 @@ export default function Footer() {
           <p className="text-slate-300 mb-6">
             Thanks for visiting! Let's create something amazing together.
           </p>
-          <div className="flex justify-center gap-6 mb-8">
-            <a href="https://www.linkedin.com/in/thejeswari" className="text-slate-300 hover:text-white transition-colors">
-              <i className="fab fa-linkedin text-xl"></i>
-            </a>
-            <a href="https://github.com/Theja1905" className="text-slate-300 hover:text-white transition-colors">
-              <i className="fab fa-github text-xl"></i>
-            </a>
-          </div>
           <div className="border-t border-slate-700 pt-6">
             <p className="text-slate-400 text-sm">
               © 2025 Thejeswari. All rights reserved.

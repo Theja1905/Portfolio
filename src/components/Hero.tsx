@@ -72,13 +72,13 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center md:justify-start">
             <a
               href="#projects"
-              className="border-2 border-blue-900 text-blue-600 text-lg px-8 py-4 rounded-xl font-semibold hover:bg-blue-900 hover:text-white transition-all shadow-lg hover:shadow-2xl transform hover:-translate-y-1"
+              className="border-1 border-purple-900 text-blue-900 text-lg px-8 py-4 rounded-xl font-semibold hover:bg-indigo-900 hover:text-white transition-all shadow-lg hover:shadow-2xl transform hover:-translate-y-1"
             >
               View My Work
             </a>
             <a
               href="#contact"
-              className="border-2 border-blue-900 text-blue-600 text-lg px-8 py-4 rounded-xl font-semibold hover:bg-blue-900 hover:text-white transition-all shadow-lg hover:shadow-2xl transform hover:-translate-y-1"
+              className="border- border-purple-900 text-blue-900 text-lg px-8 py-4 rounded-xl font-semibold hover:bg-indigo-900 hover:text-white transition-all shadow-lg hover:shadow-2xl transform hover:-translate-y-1"
             >
               Get In Touch
             </a>

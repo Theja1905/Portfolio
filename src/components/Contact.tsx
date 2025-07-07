@@ -14,8 +14,8 @@ export default function Contact() {
           <div className="flex flex-col md:flex-row justify-center gap-12 text-center">
             {/* Email */}
             <div className="flex flex-col items-center gap-2">
-              <div className="w-14 h-14 bg-blue-600/10 rounded-full flex items-center justify-center">
-                <i className="fas fa-envelope text-blue-600 text-xl"></i>
+              <div className="w-14 h-14 bg-purple-500/10 rounded-full flex items-center justify-center">
+                <i className="fas fa-envelope text-purple-900 text-xl"></i>
               </div>
               <div>
                 <h4 className="font-semibold text-slate-800">Email</h4>
@@ -27,8 +27,8 @@ export default function Contact() {
 
             {/* LinkedIn */}
             <div className="flex flex-col items-center gap-2">
-              <div className="w-14 h-14 bg-blue-600/10 rounded-full flex items-center justify-center">
-                <i className="fab fa-linkedin text-blue-600 text-xl"></i>
+              <div className="w-14 h-14 bg-purple-500/10 rounded-full flex items-center justify-center">
+                <i className="fab fa-linkedin text-purple-900 text-xl"></i>
               </div>
               <div>
                 <h4 className="font-semibold text-slate-800">LinkedIn</h4>
@@ -40,8 +40,8 @@ export default function Contact() {
 
             {/* Location */}
             <div className="flex flex-col items-center gap-2">
-              <div className="w-14 h-14 bg-blue-600/10 rounded-full flex items-center justify-center">
-                <i className="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+              <div className="w-14 h-14 bg-purple-500/10 rounded-full flex items-center justify-center">
+                <i className="fas fa-map-marker-alt text-purple-900 text-xl"></i>
               </div>
               <div>
                 <h4 className="font-semibold text-slate-800">Location</h4>
@@ -54,10 +54,10 @@ export default function Contact() {
           <div className="mt-8 text-center">
             <h4 className="font-semibold mb-4 text-slate-800">Follow Me</h4>
             <div className="flex justify-center gap-4">
-              <a href="https://www.linkedin.com/in/thejeswari" className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-all duration-300">
+              <a href="https://www.linkedin.com/in/thejeswari" className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center text-slate-600 hover:bg-purple-800 hover:text-white transition-all duration-300">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="https://github.com/Theja1905" className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white transition-all duration-300">
+              <a href="https://github.com/Theja1905" className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center text-slate-600 hover:bg-purple-800 hover:text-white transition-all duration-300">
                 <i className="fab fa-github"></i>
               </a>
             </div>
