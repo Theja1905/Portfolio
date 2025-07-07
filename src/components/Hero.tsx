@@ -7,7 +7,7 @@ export default function Hero() {
       className="relative min-h-screen pt-10 px-6 md:px-12 lg:px-20 flex items-center justify-center overflow-hidden"
     >
       {/* Layout Container */}
-      <div className="flex flex-col md:flex-row items-center gap-30 w-full max-w-7xl">
+      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-30 w-full max-w-7xl">
         {/* Profile Image */}
             <div className="flex justify-center mt-12 md:mt-0">
             <div className="w-72 h-72 md:w-[360px] md:h-[360px] rounded-full overflow-hidden shadow-2xl border-0 border-white bg-white">
@@ -18,7 +18,6 @@ export default function Hero() {
                 />
             </div>
             </div>
-
 
         {/* Text + Avatar */}
         <div className="text-center md:text-left relative">
