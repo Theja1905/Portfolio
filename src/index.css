@@ -72,7 +72,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background:
-      #fffae8 70%;  /* warm pale yellow */
+      #fef7ece8 70%;  /* warm pale yellow */
     min-height: 100vh;
     color: var(--portfolio-slate-900);
   }
