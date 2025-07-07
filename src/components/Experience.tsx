@@ -63,7 +63,7 @@ export default function Experience() {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-blue-100 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden w-full sm:w-[350px] lg:w-[900px] p-6 fade-in border border-slate-200/40"
+              className="bg-orange-50 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden w-full sm:w-[350px] lg:w-[900px] p-6 fade-in border border-slate-200/40"
             >
               <h3 className="text-xl font-semibold text-slate-800 mb-2">
                 {exp.title}
@@ -79,7 +79,7 @@ export default function Experience() {
                 {exp.skills.map((skill, i) => (
                   <span
                     key={i}
-                    className="bg-indigo-200 text-slate-800 px-3 py-1 rounded-full text-xs font-medium"
+                    className="bg-indigo-100 text-slate-800 px-3 py-1 rounded-full text-xs font-medium"
                   >
                     {skill}
                   </span>
