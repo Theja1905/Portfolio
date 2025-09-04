@@ -15,7 +15,7 @@ const projects = [
   {
     title: "Lumi - TikTok TechJam 2025",
     description:
-      "Created Lumi, an AI-powered companion chatbot promoting mindful living. Designed the end-to-end user flow, developed the frontend with Lynx and React, and integrated Google Gemini API through Express—delivering a polished, user-focused product under hackathon constraints.",
+      "Created Lumi, an AI-powered companion chatbot promoting mindful living. Designed the end-to-end user flow, developed the frontend with Lynx and React, and integrated Google Gemini API through Express, delivering a polished, user-focused product under hackathon constraints.",
     image: tiktokTechJamImg,
     technologies: ["React", "Lynx", "Express.js", "Google Gemini API", "Full-Stack Development"],
     liveUrl: "#",
