@@ -10,10 +10,19 @@ export default function Skills() {
       "Tailwind CSS",
       "HTML & CSS",
     ],
-    "Backend & Cloud": ["Firebase", "Firestore",],
+    "Backend & Cloud": ["Firebase", "Firestore", "Express.js", "Google Gemini API"],
     "Version Control & Collaboration": ["Git & GitHub"],
     "Data Tools & Analytics": ["Data Visulisation", "R Markdown", "dplyr", "Sheets / Excel"],
-    Others: ["Expo Go", "Canva", "VS Code", "Vite", "Netlify", "Figma", "Spline"],
+    "Product Management & PM Tools": [
+      "Product Roadmapping",
+      "Startup & MVP Development",
+      "Agile / Scrum Practices",
+      "User Research & Testing",
+      "Market & Competitor Analysis",
+      "PRD Creation & Maintenance",
+      "Stakeholder Communication",
+    ],
+    Others: ["Expo Go", "Lynx", "Canva", "VS Code", "Vite", "Netlify", "Spline"],
   };
 
   return (
