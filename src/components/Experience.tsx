@@ -1,23 +1,42 @@
 export default function Experience() {
   const experiences = [
     {
+      title: "Product Manager Intern",
+      organization: "Horizon Labs",
+      duration: "Jul 2025 - Present",
+      description: (
+        <ul className="list-disc list-inside space-y-1 text-slate-700">
+          <li>
+            Drove product initiatives in fast-paced startup environment, turning vision into actionable PRDs and roadmaps.
+          </li>
+          <li>
+            Audited competitors identifying 12 critical feature gaps and new market opportunities.
+          </li>
+          <li>
+            Cross-functional collaboration with engineers and designers, streamlining delivery and accelerating feature launches.
+          </li>
+        </ul>
+      ),
+      skills: ["Strategic Product Management", "Competitive Analysis", "User Research", "Market Intelligence", "Cross-functional Leadership", "Healthcare Technology"],
+    },
+    {
       title: "Call Centre - Income Tax Advisor",
       organization: "Inland Revenue Authority of Singapore",
       duration: "Feb 2024 - Apr 2024",
       description: (
         <ul className="list-disc list-inside space-y-1 text-slate-700">
           <li>
-            Assisted taxpayers with inquiries related to income tax matters and filing processes.
+            Provided expert guidance to 200+ taxpayers daily on complex income tax matters and filing processes.
           </li>
           <li>
-            Provided accurate guidance on tax regulations, filing procedures, and system navigation via phone.
+            Quickly mastered complex regulatory frameworks and tax systems to deliver accurate, compliant advice.
           </li>
           <li>
-            Resolved inquiries promptly and collaborated with internal departments to deliver smooth and effective support.
+            Resolved inquiries promptly and collaborated with internal departments for seamless support.
           </li>
         </ul>
       ),
-      skills: ["Customer Service", "Communication", "Data Entry", "Problem Solving"],
+      skills: ["Customer Success", "Communication", "Regulatory Knowledge", "Problem Resolution"],
     },
     {
       title: "Job Shadowing & Volunteering",
@@ -32,34 +51,17 @@ export default function Experience() {
       description: (
         <ul className="list-disc list-inside space-y-1 text-slate-700">
           <li>
-            Observed doctors during patient consultations and supported basic clerical tasks.
+            Shadowed doctors during patient consultations, gaining insights into hospital operations and clinical decision-making.
           </li>
           <li>
-            Gained exposure to healthcare practices and patient-doctor interactions.
+            Gained valuable exposure to patient care workflows and challenges faced by patients and healthcare providers.
           </li>
           <li>
-            Volunteered by assisting and interacting with patients, helping them with any needs or concerns they had.
+            Provided hands-on support through volunteering initiatives, assisting patients and staff to improve care experiences.
           </li>
         </ul>
       ),
-      skills: ["Observation", "Empathy", "Communication", "Attention to Detail", "Adaptability"],
-    },
-    // ← Add Horizon Labs PM Internship here
-    {
-      title: "HORIZON LABS Product Manager Intern",
-      organization: "Horizon Labs",
-      duration: "Jul 2025 - Present",
-      description: (
-        <ul className="list-disc list-inside space-y-1 text-slate-700">
-          <li>
-            Immersed in fast-paced startup operations, collaborating with engineers and designers to translate product vision into PRDs, drive user research, and shape feature roadmaps in a resource-constrained, entrepreneurial environment.
-          </li>
-          <li>
-            Supporting product strategy by managing feature prioritization, user research, and structured documentation.
-          </li>
-        </ul>
-      ),
-      skills: ["Product Management", "User Research", "Feature Prioritization", "Documentation", "Collaboration"],
+      skills: ["Healthcare Environment Understanding", "Empathy", "Communication", "Patient Support", "Adaptability"],
     },
   ];
 
