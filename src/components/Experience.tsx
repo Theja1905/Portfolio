@@ -7,13 +7,13 @@ export default function Experience() {
       description: (
         <ul className="list-disc list-inside space-y-1 text-slate-700">
           <li>
-            Drove product initiatives in fast-paced startup environment, turning vision into actionable PRDs and roadmaps.
+            Leading end-to-end product development in a fast-paced startup environment, turning vision into actionable PRDs and roadmaps.
           </li>
           <li>
             Audited competitors identifying 12 critical feature gaps and new market opportunities.
           </li>
           <li>
-            Cross-functional collaboration with engineers and designers, streamlining delivery and accelerating feature launches.
+            Cross-functional collaboration with engineers and designers, streamlining delivery and accelerating feature launches under tight timelines.
           </li>
         </ul>
       ),
