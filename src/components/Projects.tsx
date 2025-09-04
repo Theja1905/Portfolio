@@ -32,7 +32,6 @@ const projects = [
   },
 ];
 
-
 export default function Projects() {
   return (
     <section id="projects" className="py-12">
@@ -51,7 +50,8 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-red-50 bg-opacity-100 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden card-hover fade-in w-full sm:w-[350px] lg:w-[400px] border-[1px] border-[#cbb4e8]"
+              className="bg-red-50 bg-opacity-100 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden card-hover fade-in 
+                         w-full sm:w-[48%] lg:w-[32%] border-[1px] border-[#cbb4e8]"
             >
               <div className="w-full h-70 flex items-center justify-center">
                 <img
