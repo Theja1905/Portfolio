@@ -46,7 +46,7 @@ export default function Projects() {
         </div>
 
         {/* Project Cards */}
-        <div className="flex flex-wrap justify-center gap-8">
+  <div className="flex flex-row justify-center gap-8 items-stretch">
           {projects.map((project, index) => (
             <div
               key={index}
