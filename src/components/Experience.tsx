@@ -25,7 +25,7 @@ export default function Experience() {
         <>
           National Cancer Centre Singapore, Alexandra Hospital
           <br />
-           National Healthcare Group, Singapore Cancer Centre, National Kidney Foundation
+          National Healthcare Group, Singapore Cancer Centre, National Kidney Foundation
         </>
       ),
       duration: "Jan 2022 - Dec 2023",
@@ -43,6 +43,23 @@ export default function Experience() {
         </ul>
       ),
       skills: ["Observation", "Empathy", "Communication", "Attention to Detail", "Adaptability"],
+    },
+    // ← Add Horizon Labs PM Internship here
+    {
+      title: "HORIZON LABS Product Manager Intern",
+      organization: "Horizon Labs",
+      duration: "Jul 2025 - Present",
+      description: (
+        <ul className="list-disc list-inside space-y-1 text-slate-700">
+          <li>
+            Immersed in fast-paced startup operations, collaborating with engineers and designers to translate product vision into PRDs, drive user research, and shape feature roadmaps in a resource-constrained, entrepreneurial environment.
+          </li>
+          <li>
+            Supporting product strategy by managing feature prioritization, user research, and structured documentation.
+          </li>
+        </ul>
+      ),
+      skills: ["Product Management", "User Research", "Feature Prioritization", "Documentation", "Collaboration"],
     },
   ];
 
