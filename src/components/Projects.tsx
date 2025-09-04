@@ -1,26 +1,37 @@
 import gymSyncImg from '../assets/images/gym-sync.png';
 import portfolioImg from '../assets/images/portfolio.png';
+import tiktokTechJamImg from '../assets/images/tiktok-techjam.png';
 
 const projects = [
   {
     title: "GymSync",
     description:
-      "An innovative fitness application currently in development. Features include workout tracking, progress monitoring, and social fitness community integration.",
-    image: gymSyncImg, // ✅ Imported image
+      "Developed GymSync, a fitness app empowering gym-goers to stay consistent with personalized workout templates, logging, and progress dashboards. Conducted user testing and iterated features to align with real user needs, combining technical skills with product thinking.",
+    image: gymSyncImg,
     technologies: ["React Native", "React.js", "Firebase", "Firestore", "Expo Go"],
-    liveUrl: "#",
+    liveUrl: "https://drive.google.com/file/d/1vrFfcyfNznN-wUkCRsHiTBNy_AigXYuU/view?usp=sharing",
     codeUrl: "https://github.com/Theja1905/GymSync",
+  },
+  {
+    title: "Lumi - TikTok TechJam 2025",
+    description:
+      "Created Lumi, an AI-powered companion chatbot promoting mindful living. Designed the end-to-end user flow, developed the frontend with Lynx and React, and integrated Google Gemini API through Express—delivering a polished, user-focused product under hackathon constraints.",
+    image: tiktokTechJamImg,
+    technologies: ["React", "Lynx", "Express.js", "Google Gemini API", "Full-Stack Development"],
+    liveUrl: "#",
+    codeUrl: "https://github.com/chyemavis/LumiChat",
   },
   {
     title: "Portfolio Website",
     description:
-      "This personal portfolio website showcasing my skills, projects, and experience. Built with React and Tailwind CSS for a sleek and responsive design.",
-    image: portfolioImg, // ✅ Imported image
+      "Built a personal portfolio website to showcase skills, projects, and experience. Leveraged React and Tailwind CSS to create a sleek, responsive design that communicates personal brand and technical expertise.",
+    image: portfolioImg,
     technologies: ["React", "Tailwind CSS", "JavaScript", "TypeScript", "Git", "Netlify"],
-    liveUrl: "#",
+    liveUrl: "https://thejeswari.netlify.app/",
     codeUrl: "https://github.com/Theja1905/Portfolio",
   },
 ];
+
 
 export default function Projects() {
   return (

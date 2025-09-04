@@ -2,7 +2,7 @@ export default function Experience() {
   const experiences = [
     {
       title: "Product Manager Intern",
-      organization: "Horizon Labs",
+      organization: "Horizon Labs, an AI-driven startup advancing proactive healthcare to improve patient outcomes and streamline clinical workflows.",
       duration: "Jul 2025 - Present",
       description: (
         <ul className="list-disc list-inside space-y-1 text-slate-700">
