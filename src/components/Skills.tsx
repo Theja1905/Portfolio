@@ -12,7 +12,7 @@ export default function Skills() {
     ],
     "Backend & Cloud": ["Firebase", "Firestore", "Express.js", "Google Gemini API"],
     "Version Control & Collaboration": ["Git & GitHub"],
-    "Data Tools & Analytics": ["Data Visulisation", "R Markdown", "dplyr", "Sheets / Excel"],
+    "Data Tools & Analytics": ["Data Visualisation", "R Markdown", "dplyr", "Sheets / Excel"],
     "Product Management & PM Tools": [
       "Product Roadmapping",
       "Startup & MVP Development",
