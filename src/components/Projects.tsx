@@ -1,6 +1,6 @@
 import gymSyncImg from '../assets/images/gym-sync.png';
 import portfolioImg from '../assets/images/portfolio.png';
-import tiktokTechJamImg from '../assets/images/tiktok-techjam.png';
+import tiktokTechJamImg from '../assets/images/lumi.png';
 
 const projects = [
   {
