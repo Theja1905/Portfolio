@@ -1,6 +1,7 @@
 import gymSyncImg from '../assets/images/gym-sync.png';
 import portfolioImg from '../assets/images/portfolio.png';
 import tiktokTechJamImg from '../assets/images/lumi.png';
+import beijingPropertyImg from '../assets/images/beijing.png';
 
 const projects = [
   {
@@ -29,6 +30,29 @@ const projects = [
     technologies: ["React", "Tailwind CSS", "JavaScript", "TypeScript", "Git", "Netlify"],
     liveUrl: "https://thejeswari.netlify.app/",
     codeUrl: "https://github.com/Theja1905/Portfolio",
+  },
+  {
+    title: "Beijing Property Analysis",
+    description:
+      "Conducted a comprehensive market analysis of Beijing's housing prices from 2002 to 2018 to identify the most promising investment strategies for the property market. Leveraged Tableau and advanced data visualization techniques to transform raw real estate data into interactive dashboards and a compelling narrative. Delivered actionable insights and a data-driven investment thesis to stakeholders, highlighting districts and property types with the highest potential for valuation growth and optimal return on investment.",
+    image: beijingPropertyImg, // Reusing portfolio image, replace with a relevant image if available
+    technologies: [
+      // Languages & Frameworks
+      "SQL",
+      "Python",
+      "Django",
+      "Flask",
+      // Data Tools
+      "Tableau",
+      // Skills
+      "Data Visualisation",
+      "Data Analysis",
+      "Market Analysis",
+      "Microsoft Excel",
+      "Data Cleaning"
+    ],
+    liveUrl: "https://docs.google.com/presentation/d/1l92kRC_Ae4rGx20FDAAgKuQOHAy2SBSbByJTGB72I2w/edit?slide=id.g23cf3b500de_0_0#slide=id.g23cf3b500de_0_0",
+    codeUrl: "", // No code link
   },
 ];
 
@@ -84,14 +108,16 @@ export default function Projects() {
                   >
                     <i className="fas fa-external-link-alt mr-1"></i>Live Demo
                   </a>
-                  <a
-                    href={project.codeUrl}
-                    className="text-slate-800 hover:text-slate-600 font-medium transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-github mr-1"></i>Code
-                  </a>
+                  {project.codeUrl && project.codeUrl !== "" && (
+                    <a
+                      href={project.codeUrl}
+                      className="text-slate-800 hover:text-slate-600 font-medium transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-github mr-1"></i>Code
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
