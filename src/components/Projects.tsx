@@ -74,17 +74,17 @@ export default function Projects() {
             Here are some of my recent projects that showcase my skills in full-stack development, design, and problem-solving.
           </p>
         </div>
-        <div className="flex items-start justify-center gap-2 w-full mt-[-2rem]">
+        <div className="flex items-start justify-center gap-0 w-full mt-[-2rem]">
           <button
             onClick={handlePrev}
             disabled={!canGoLeft}
-            className={`rounded-full p-3 text-4xl font-bold shadow-lg border-2 border-purple-300 transition-colors ${canGoLeft ? 'hover:bg-purple-200 text-purple-700 bg-white' : 'text-slate-300 bg-slate-100 cursor-not-allowed'}`}
+            className={`p-0 bg-transparent border-none outline-none focus:outline-none transition-colors ${canGoLeft ? 'text-purple-700 hover:text-purple-500' : 'text-slate-300 cursor-not-allowed'}`}
             aria-label="Previous projects"
-            style={{ marginRight: '0.5rem', marginTop: '2.5rem' }}
+            style={{ marginRight: '0.1rem', marginTop: '2.5rem', fontSize: '3rem', fontWeight: 900, lineHeight: 1 }}
           >
-            &#8592;
+            <span style={{fontWeight:900, fontSize:'3.5rem', lineHeight:1, display:'inline-block'}}>&#8592;</span>
           </button>
-          <div className="flex flex-row gap-4 w-full justify-center">
+          <div className="flex flex-row gap-2 w-full justify-center">
             {projects.slice(startIdx, startIdx + cardsPerPage).map((project, index) => (
               <div
                 key={index + startIdx}
@@ -139,11 +139,11 @@ export default function Projects() {
           <button
             onClick={handleNext}
             disabled={!canGoRight}
-            className={`rounded-full p-3 text-4xl font-bold shadow-lg border-2 border-purple-300 transition-colors ${canGoRight ? 'hover:bg-purple-200 text-purple-700 bg-white' : 'text-slate-300 bg-slate-100 cursor-not-allowed'}`}
+            className={`p-0 bg-transparent border-none outline-none focus:outline-none transition-colors ${canGoRight ? 'text-purple-700 hover:text-purple-500' : 'text-slate-300 cursor-not-allowed'}`}
             aria-label="Next projects"
-            style={{ marginLeft: '0.5rem', marginTop: '2.5rem' }}
+            style={{ marginLeft: '0.1rem', marginTop: '2.5rem', fontSize: '3rem', fontWeight: 900, lineHeight: 1 }}
           >
-            &#8594;
+            <span style={{fontWeight:900, fontSize:'3.5rem', lineHeight:1, display:'inline-block'}}>&#8594;</span>
           </button>
         </div>
       </div>
