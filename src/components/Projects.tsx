@@ -8,8 +8,8 @@ const projects = [
     {
     title: "Beijing Property Analysis",
     description:
-      "Conducted a comprehensive market analysis of Beijing's housing prices from 2002 to 2018 to identify promising investment strategies for the property market. Leveraged Tableau and advanced data visualization techniques to transform raw real estate data into interactive dashboards and a compelling narrative. Delivered actionable insights and a data-driven investment thesis to stakeholders, highlighting districts and property types with the highest potential for valuation growth and optimal return on investment.",
-    image: beijingPropertyImg, // Reusing portfolio image, replace with a relevant image if available
+      "Analyzed Beijing housing prices from 2002 to 2018 using Tableau and Data Visualization to develop and deliver an actionable, data-driven investment thesis highlighting high-potential property districts for maximum ROI.",
+    image: beijingPropertyImg, 
     technologies: [
       "Tableau",
       "Data Visualisation",
@@ -74,16 +74,17 @@ export default function Projects() {
             Here are some of my recent projects that showcase my skills in full-stack development, design, and problem-solving.
           </p>
         </div>
-        <div className="flex items-center justify-center gap-2 w-full">
+        <div className="flex items-start justify-center gap-2 w-full mt-[-2rem]">
           <button
             onClick={handlePrev}
             disabled={!canGoLeft}
-            className={`rounded-full p-2 text-2xl transition-colors ${canGoLeft ? 'hover:bg-purple-100 text-purple-700' : 'text-slate-300 cursor-not-allowed'}`}
+            className={`rounded-full p-3 text-4xl font-bold shadow-lg border-2 border-purple-300 transition-colors ${canGoLeft ? 'hover:bg-purple-200 text-purple-700 bg-white' : 'text-slate-300 bg-slate-100 cursor-not-allowed'}`}
             aria-label="Previous projects"
+            style={{ marginRight: '0.5rem', marginTop: '2.5rem' }}
           >
             &#8592;
           </button>
-          <div className="flex flex-row gap-8 w-full justify-center">
+          <div className="flex flex-row gap-4 w-full justify-center">
             {projects.slice(startIdx, startIdx + cardsPerPage).map((project, index) => (
               <div
                 key={index + startIdx}
@@ -138,8 +139,9 @@ export default function Projects() {
           <button
             onClick={handleNext}
             disabled={!canGoRight}
-            className={`rounded-full p-2 text-2xl transition-colors ${canGoRight ? 'hover:bg-purple-100 text-purple-700' : 'text-slate-300 cursor-not-allowed'}`}
+            className={`rounded-full p-3 text-4xl font-bold shadow-lg border-2 border-purple-300 transition-colors ${canGoRight ? 'hover:bg-purple-200 text-purple-700 bg-white' : 'text-slate-300 bg-slate-100 cursor-not-allowed'}`}
             aria-label="Next projects"
+            style={{ marginLeft: '0.5rem', marginTop: '2.5rem' }}
           >
             &#8594;
           </button>
