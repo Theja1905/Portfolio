@@ -84,7 +84,7 @@ export default function Projects() {
           >
             <span style={{fontWeight:900, fontSize:'3.5rem', lineHeight:1, display:'inline-block'}}>&#8592;</span>
           </button>
-          <div className="flex flex-row gap-2 w-full justify-center">
+          <div className="flex flex-row gap-5 w-full justify-center">
             {projects.slice(startIdx, startIdx + cardsPerPage).map((project, index) => (
               <div
                 key={index + startIdx}
