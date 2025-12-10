@@ -21,7 +21,7 @@ const projects = [
     description:
       "Created a React Native/Expo mobile application utilizing AI Food Recognition and a Smart Matching System to pair users based on complementary fridge leftovers, implementing Firebase for robust authentication and real-time chat functionality to connect users.",
     image: fridgemateImg,
-    technologies: ["Expo", "Firebase", "React Native", "AI Integration", "TypeScript"],
+    technologies: ["Expo", "Firebase", "React Native", "AI Integration - Grok, OpenAI", "TypeScript"],
     liveUrl: "https://www.youtube.com/shorts/miNZkhMt2zg",
     codeUrl: "https://github.com/jj55j7/fridge-mate",
   },

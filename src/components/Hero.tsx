@@ -63,7 +63,7 @@ export default function Hero() {
           </div>
 
           <p className="text-base sm:text-xl text-slate-700 mb-10 max-w-3xl leading-relaxed mt-6">
-            I'm a Year 2 Information Systems student at NUS School of Computing.
+            I'm a Year 2 Information Systems student at National University of Singapore, School of Computing.
             I'm passionate about using technology to drive practical, user-focused solutions,
             creating digital experiences that are impactful.
             I'm always eager to explore new technologies, build impactful projects, and collaborate.
