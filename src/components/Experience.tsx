@@ -2,7 +2,7 @@ export default function Experience() {
   const experiences = [
     {
       title: "Product Manager Intern",
-      organization: "Horizon Labs, an AI-driven startup advancing proactive healthcare to improve patient outcomes and streamline clinical workflows.",
+      organization: "Horizon Labs - an Australian-based, AI-driven startup advancing proactive healthcare to improve patient outcomes and streamline clinical workflows.",
       duration: "Jul 2025 - Dec 2025",
       description: (
         <ul className="list-disc list-inside space-y-1 text-slate-700">
@@ -21,7 +21,7 @@ export default function Experience() {
     },
     {
       title: "Call Centre - Income Tax Advisor",
-      organization: "Inland Revenue Authority of Singapore",
+      organization: "Inland Revenue Authority of Singapore - principal government agency responsible for the assessment, collection, and enforcement of taxes in Singapore.",
       duration: "Feb 2024 - Apr 2024",
       description: (
         <ul className="list-disc list-inside space-y-1 text-slate-700">
