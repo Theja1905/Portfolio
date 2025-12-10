@@ -75,16 +75,29 @@ export default function Projects() {
   const cardsPerPage = 3;
   const canGoLeft = startIdx > 0;
   const canGoRight = startIdx + cardsPerPage < projects.length;
+  const sectionRef = React.useRef<HTMLElement>(null);
+
+  const scrollToSection = () => {
+    if (sectionRef.current) {
+      sectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   const handlePrev = () => {
-    if (canGoLeft) setStartIdx(startIdx - cardsPerPage);
+    if (canGoLeft) {
+      setStartIdx(startIdx - cardsPerPage);
+      scrollToSection();
+    }
   };
   const handleNext = () => {
-    if (canGoRight) setStartIdx(startIdx + cardsPerPage);
+    if (canGoRight) {
+      setStartIdx(startIdx + cardsPerPage);
+      scrollToSection();
+    }
   };
 
   return (
-    <section id="projects" className="py-12 w-full">
+    <section id="projects" className="py-12 w-full" ref={sectionRef}>
       <div className="w-full px-2 sm:px-4 lg:px-6 mx-auto">
         <div className="text-center mb-16 fade-in">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-slate-800">
