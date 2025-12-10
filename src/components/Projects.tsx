@@ -17,9 +17,9 @@ const projects = [
     codeUrl: "https://github.com/chyemavis/auroramart",
   },
   {
-    title: "Fridge-Mate",
+    title: "FridgeMate - Cursor Hackathon 2025",
     description:
-      "Created a React Native/Expo mobile application utilizing AI Food Recognition and a Smart Matching System to pair users based on complementary fridge leftovers, implementing Firebase for robust authentication and real-time chat functionality.",
+      "Created a React Native/Expo mobile application utilizing AI Food Recognition and a Smart Matching System to pair users based on complementary fridge leftovers, implementing Firebase for robust authentication and real-time chat functionality to connect users.",
     image: fridgemateImg,
     technologies: ["Expo", "Firebase", "React Native", "AI Integration", "TypeScript"],
     liveUrl: "https://www.youtube.com/shorts/miNZkhMt2zg",
@@ -80,7 +80,7 @@ export default function Projects() {
             Here are some of my recent projects that showcase my skills in full-stack development, design, and problem-solving.
           </p>
         </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-10 w-full justify-center px-8 ml-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-10 w-full justify-center px-9 ml-5">
               {projects.map((project, index) => (
                 <div
                   key={index}
