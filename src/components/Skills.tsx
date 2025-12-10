@@ -14,7 +14,7 @@ export default function Skills() {
       "Django",
       "Flask",
     ],
-    "Backend & Cloud": ["Firebase", "Firestore", "Express.js", "Google Gemini API"],
+    "Backend & Cloud": ["Firebase", "Firestore", "Express.js", "Google Gemini API", "Grok API"],
     "Version Control & Collaboration": ["Git & GitHub"],
     "Data Tools & Analytics": ["Tableau", "Data Visualisation", "R Markdown", "dplyr", "Sheets / Excel"],
     "Product Management & PM Tools": [
@@ -26,7 +26,7 @@ export default function Skills() {
       "PRD Creation & Maintenance",
       "Stakeholder Communication",
     ],
-    Others: ["Expo Go", "Lynx", "Canva", "VS Code", "Vite", "Netlify", "Spline"],
+    Others: ["Expo Go", "Lynx", "Canva", "VS Code", "Netlify", "Spline"],
   };
 
   return (

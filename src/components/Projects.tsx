@@ -3,9 +3,29 @@ import gymSyncImg from '../assets/images/gym-sync.png';
 import portfolioImg from '../assets/images/portfolio.png';
 import tiktokTechJamImg from '../assets/images/lumi.png';
 import beijingPropertyImg from '../assets/images/beijing.png';
+import auroramartImg from '../assets/images/auroramart.png';
+import fridgemateImg from '../assets/images/fridgemate.png';
 
 const projects = [
-    {
+  {
+    title: "AuroraMart",
+    description:
+      "Developed a Django-based e-commerce platform featuring a storefront and admin panel, incorporating custom data management commands and integrating pretrained machine learning models to provide data-driven insights for product and customer analysis.",
+    image: auroramartImg,
+    technologies: ["Django", "Python", "ML Model Integration", "HTML", "CSS"],
+    liveUrl: "https://www.youtube.com/watch?v=17Ys4CtcBHo",
+    codeUrl: "https://github.com/chyemavis/auroramart",
+  },
+  {
+    title: "Fridge-Mate",
+    description:
+      "Created a React Native/Expo mobile application utilizing AI Food Recognition and a Smart Matching System to pair users based on complementary fridge leftovers, implementing Firebase for robust authentication and real-time chat functionality.",
+    image: fridgemateImg,
+    technologies: ["Expo", "Firebase", "React Native", "AI Integration", "TypeScript"],
+    liveUrl: "https://www.youtube.com/shorts/miNZkhMt2zg",
+    codeUrl: "https://github.com/jj55j7/fridge-mate",
+  },
+  {
     title: "Beijing Property Analysis",
     description:
       "Analyzed Beijing housing prices from 2002 to 2018 using Tableau and Data Visualization to develop and deliver an actionable, data-driven investment thesis highlighting high-potential property districts for maximum ROI.",
