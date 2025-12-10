@@ -65,39 +65,12 @@ const projects = [
       "Built a personal portfolio website to showcase skills, projects, and experience. Leveraged React and Tailwind CSS to create a sleek, responsive design that communicates personal brand and technical expertise.",
     image: portfolioImg,
     technologies: ["React", "Tailwind CSS", "JavaScript", "TypeScript", "Git", "Netlify"],
-    liveUrl: "https://thejeswari.netlify.app/",
-    codeUrl: "https://github.com/Theja1905/Portfolio",
-  },
+  }
 ];
 
 export default function Projects() {
-  const [startIdx, setStartIdx] = useState(0);
-  const cardsPerPage = 3;
-  const canGoLeft = startIdx > 0;
-  const canGoRight = startIdx + cardsPerPage < projects.length;
-  const sectionRef = React.useRef<HTMLElement>(null);
-
-  const scrollToSection = () => {
-    if (sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
-  const handlePrev = () => {
-    if (canGoLeft) {
-      setStartIdx(startIdx - cardsPerPage);
-      scrollToSection();
-    }
-  };
-  const handleNext = () => {
-    if (canGoRight) {
-      setStartIdx(startIdx + cardsPerPage);
-      scrollToSection();
-    }
-  };
-
   return (
-    <section id="projects" className="py-12 w-full" ref={sectionRef}>
+    <section id="projects" className="py-12 w-full">
       <div className="w-full px-2 sm:px-4 lg:px-6 mx-auto">
         <div className="text-center mb-16 fade-in">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-slate-800">
@@ -107,79 +80,59 @@ export default function Projects() {
             Here are some of my recent projects that showcase my skills in full-stack development, design, and problem-solving.
           </p>
         </div>
-        <div className="flex items-start justify-center gap-0 w-full mt-[-2rem]">
-          <button
-            onClick={handlePrev}
-            disabled={!canGoLeft}
-            className={`p-0 bg-transparent border-none outline-none focus:outline-none transition-colors ${canGoLeft ? 'text-purple-700 hover:text-purple-500' : 'text-slate-300 cursor-not-allowed'}`}
-            aria-label="Previous projects"
-            style={{ marginRight: '0.1rem', marginTop: '2.5rem', fontSize: '3rem', fontWeight: 900, lineHeight: 1 }}
-          >
-            <span style={{fontWeight:900, fontSize:'3.5rem', lineHeight:1, display:'inline-block'}}>&#8592;</span>
-          </button>
-          <div className="flex flex-row gap-5 w-full justify-center">
-            {projects.slice(startIdx, startIdx + cardsPerPage).map((project, index) => (
-              <div
-                key={index + startIdx}
-                className="bg-red-50 bg-opacity-100 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden card-hover fade-in w-full max-w-xs border-[1px] border-[#cbb4e8] flex-shrink-0"
-              >
-                <div className="w-full h-70 flex items-center justify-center">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="max-h-full max-w-full object-contain mt-15"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3 text-slate-800">
-                    {project.title}
-                  </h3>
-                  <p className="text-slate-600 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="bg-purple-100 text-slate-900 px-3 py-1 rounded-full text-xs border border-purple-300"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full justify-center">
+              {projects.map((project, index) => (
+                <div
+                  key={index}
+                  className="bg-red-50 bg-opacity-100 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden card-hover fade-in w-full max-w-xs border-[1px] border-[#cbb4e8] flex-shrink-0 mx-auto"
+                >
+                  <div className="w-full h-70 flex items-center justify-center">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="max-h-full max-w-full object-contain mt-15"
+                    />
                   </div>
-                  <div className="flex gap-3">
-                    <a
-                      href={project.liveUrl}
-                      className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i className="fas fa-external-link-alt mr-1"></i>Live Demo
-                    </a>
-                    {project.codeUrl && project.codeUrl !== "" && (
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold mb-3 text-slate-800">
+                      {project.title}
+                    </h3>
+                    <p className="text-slate-600 mb-4">{project.description}</p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.technologies.map((tech, techIndex) => (
+                        <span
+                          key={techIndex}
+                          className="bg-purple-100 text-slate-900 px-3 py-1 rounded-full text-xs border border-purple-300"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex gap-3">
                       <a
-                        href={project.codeUrl}
-                        className="text-slate-800 hover:text-slate-600 font-medium transition-colors"
+                        href={project.liveUrl}
+                        className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i className="fab fa-github mr-1"></i>Code
+                        <i className="fas fa-external-link-alt mr-1"></i>Live Demo
                       </a>
-                    )}
+                      {project.codeUrl && project.codeUrl !== "" && (
+                        <a
+                          href={project.codeUrl}
+                          className="text-slate-800 hover:text-slate-600 font-medium transition-colors"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i className="fab fa-github mr-1"></i>Code
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-          <button
-            onClick={handleNext}
-            disabled={!canGoRight}
-            className={`p-0 bg-transparent border-none outline-none focus:outline-none transition-colors ${canGoRight ? 'text-purple-700 hover:text-purple-500' : 'text-slate-300 cursor-not-allowed'}`}
-            aria-label="Next projects"
-            style={{ marginLeft: '0.1rem', marginTop: '2.5rem', fontSize: '3rem', fontWeight: 900, lineHeight: 1 }}
-          >
-            <span style={{fontWeight:900, fontSize:'3.5rem', lineHeight:1, display:'inline-block'}}>&#8594;</span>
-          </button>
-        </div>
-      </div>
-    </section>
-  );
-}
+        </section>
+      );
+    }
