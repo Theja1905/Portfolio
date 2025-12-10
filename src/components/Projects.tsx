@@ -56,7 +56,7 @@ const projects = [
       "Created Lumi, an AI-powered companion chatbot promoting mindful living. Designed the end-to-end user flow, developed the frontend with Lynx and React, and integrated Google Gemini API through Express, delivering a polished, user-focused product under hackathon constraints.",
     image: tiktokTechJamImg,
     technologies: ["React", "Lynx", "Express.js", "Google Gemini API", "Full-Stack Development"],
-    liveUrl: "#",
+    liveUrl: "https://www.youtube.com/shorts/wr7nr1IIERs",
     codeUrl: "https://github.com/chyemavis/LumiChat",
   },
   {
@@ -65,6 +65,8 @@ const projects = [
       "Built a personal portfolio website to showcase skills, projects, and experience. Leveraged React and Tailwind CSS to create a sleek, responsive design that communicates personal brand and technical expertise.",
     image: portfolioImg,
     technologies: ["React", "Tailwind CSS", "JavaScript", "TypeScript", "Git", "Netlify"],
+    liveUrl: "https://thejeswari.netlify.app/",
+    codeUrl: "https://github.com/Theja1905/Portfolio",
   }
 ];
 
@@ -80,7 +82,7 @@ export default function Projects() {
             Here are some of my recent projects that showcase my skills in full-stack development, design, and problem-solving.
           </p>
         </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-10 w-full justify-center px-9 ml-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-0 gap-y-10 w-full justify-center px-9 ml-5">
               {projects.map((project, index) => (
                 <div
                   key={index}
