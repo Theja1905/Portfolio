@@ -3,8 +3,8 @@ import gymSyncImg from '../assets/images/gym-sync.png';
 import portfolioImg from '../assets/images/portfolio.png';
 import tiktokTechJamImg from '../assets/images/lumi.png';
 import beijingPropertyImg from '../assets/images/beijing.png';
-import auroramartImg from '../assets/images/auroramart.png';
-import fridgemateImg from '../assets/images/fridgemate.png';
+import auroramartImg from '../assets/images/AuroraMart.png';
+import fridgemateImg from '../assets/images/FridgeMate.png';
 
 const projects = [
   {
