@@ -84,7 +84,7 @@ export default function Projects() {
               {projects.map((project, index) => (
                 <div
                   key={index}
-                  className="bg-red-50 bg-opacity-100 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden card-hover fade-in w-full max-w-xs border-[1px] border-[#cbb4e8] flex-shrink-0 mx-auto"
+                  className="bg-red-50 bg-opacity-100 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden card-hover fade-in w-full border-[1px] border-[#cbb4e8] flex-shrink-0"
                 >
                   <div className="w-full h-70 flex items-center justify-center">
                     <img
