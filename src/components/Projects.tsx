@@ -80,7 +80,7 @@ export default function Projects() {
             Here are some of my recent projects that showcase my skills in full-stack development, design, and problem-solving.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 w-full justify-center">
               {projects.map((project, index) => (
                 <div
                   key={index}
